@@ -13,7 +13,7 @@ import Layout from './Layout';
 
 export default class Tab extends React.Component {
   static propTypes = {
-    tabStyle: PropTypes.object,
+    tabStyle: PropTypes.any,
     testID : PropTypes.string,
     title: PropTypes.string,
     titleStyle: Text.propTypes.style,
