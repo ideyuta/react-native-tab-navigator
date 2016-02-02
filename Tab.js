@@ -13,6 +13,7 @@ import Layout from './Layout';
 
 export default class Tab extends React.Component {
   static propTypes = {
+    tabStyle: TouchableOpacity.propTypes.style,
     testID : PropTypes.string,
     title: PropTypes.string,
     titleStyle: Text.propTypes.style,
@@ -48,7 +49,7 @@ export default class Tab extends React.Component {
       });
     }
 
-    let tabStyle = [styles.container, title ? null : styles.untitledContainer];
+    let tabStyle = [styles.container, title ? null : styles.untitledContainer, this.props.tabStyle];
     return (
       <TouchableOpacity
         testID={this.props.testID}
