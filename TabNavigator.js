@@ -1,4 +1,5 @@
 'use strict';
+/* @noflow */
 
 import { Set } from 'immutable';
 import React, {
