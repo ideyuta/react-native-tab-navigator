@@ -1,7 +1,6 @@
 'use strict';
 
 import React, {
-  TouchableOpacity,
   PropTypes,
 } from 'react';
 import {
@@ -15,7 +14,7 @@ export default class TabNavigatorItem extends React.Component {
     renderSelectedIcon: PropTypes.func,
     badgeText: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     renderBadge: PropTypes.func,
-    tabStyle: TouchableOpacity.propTypes.style,
+    tabStyle: PropTypes.object,
     title: PropTypes.string,
     titleStyle: Text.propTypes.style,
     selectedTitleStyle: Text.propTypes.style,

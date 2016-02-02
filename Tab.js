@@ -13,7 +13,7 @@ import Layout from './Layout';
 
 export default class Tab extends React.Component {
   static propTypes = {
-    tabStyle: TouchableOpacity.propTypes.style,
+    tabStyle: PropTypes.object,
     testID : PropTypes.string,
     title: PropTypes.string,
     titleStyle: Text.propTypes.style,
